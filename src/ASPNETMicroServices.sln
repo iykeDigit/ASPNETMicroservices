@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9990EE95-22EE-433B-BC73-026DF81C4348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{D699BB59-21FD-4569-A0A7-2E8687D6E54D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Api", "Services\Catalog\Catalog.Api\Catalog.Api.csproj", "{D7326535-04DB-42E1-91E2-550F31F9450D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9A1B5DDC-6392-4F68-B1E2-61E0E9E21444}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7326535-04DB-42E1-91E2-550F31F9450D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7326535-04DB-42E1-91E2-550F31F9450D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7326535-04DB-42E1-91E2-550F31F9450D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7326535-04DB-42E1-91E2-550F31F9450D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1B5DDC-6392-4F68-B1E2-61E0E9E21444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1B5DDC-6392-4F68-B1E2-61E0E9E21444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1B5DDC-6392-4F68-B1E2-61E0E9E21444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1B5DDC-6392-4F68-B1E2-61E0E9E21444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D699BB59-21FD-4569-A0A7-2E8687D6E54D} = {9990EE95-22EE-433B-BC73-026DF81C4348}
+		{D7326535-04DB-42E1-91E2-550F31F9450D} = {D699BB59-21FD-4569-A0A7-2E8687D6E54D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CA163BF-4FFF-43FE-9E85-B3C15A793517}
